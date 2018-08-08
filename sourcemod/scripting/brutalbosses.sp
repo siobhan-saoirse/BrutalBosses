@@ -128,6 +128,8 @@ public OnMapStart()
 	PrecacheSound("#mvm/mvm_tank_explode.wav");
 	PrecacheSound("freak_fortress_2/koloax/intro1.wav");
 	PrecacheSound("freak_fortress_2/koloax/spystab2.wav");
+	PrecacheSound("freak_fortress_2/seamusmario/intro1.wav");
+	PrecacheSound("freak_fortress_2/seamusmario/spystab2.wav");
 	PrecacheSound("freak_fortress_2/ninjaspy/kill_demo.wav");
 	PrecacheSound("freak_fortress_2/ninjaspy/kill_heavy.wav");
 	PrecacheSound("freak_fortress_2/ninjaspy/kill_soldier.wav");
