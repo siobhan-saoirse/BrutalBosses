@@ -128,7 +128,7 @@ public OnMapStart()
 	PrecacheSound("#mvm/mvm_tank_explode.wav");
 	PrecacheSound("freak_fortress_2/koloax/intro1.wav");
 	PrecacheSound("freak_fortress_2/koloax/spystab2.wav");
-	PrecacheSound("freak_fortress_2/seamusmario/intro1.wav");
+	PrecacheSound("freak_fortress_2/seamusmario/intro.wav");
 	PrecacheSound("freak_fortress_2/seamusmario/spystab2.wav");
 	PrecacheSound("freak_fortress_2/ninjaspy/kill_demo.wav");
 	PrecacheSound("freak_fortress_2/ninjaspy/kill_heavy.wav");
@@ -1029,7 +1029,7 @@ MakeNobody(client)
 	SetEntProp(client, Prop_Send, "m_bIsMiniBoss", true);
 	UpdatePlayerHitbox(client, 1.5);
 	SetModel(client, "models/freak_fortress_2/seamusmario/seamusmario.mdl");
-	EmitSoundToAll("freak_fortress_2/seamusmario/intro1.wav");
+	EmitSoundToAll("freak_fortress_2/seamusmario/intro.wav");
 	TF2_SetPlayerClass(client, TFClass_Soldier);
 	TF2_RemoveWeaponSlot(client, 0);
 	MakeNobodyMelee(client);
