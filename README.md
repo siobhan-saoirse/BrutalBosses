@@ -7,5 +7,5 @@ This is a plugin for Seamus's Server that is for Be the Bosses 2: Brutal Bosses.
 - Freak Fortress 2 Models and Materials Files
 
 
-# TODO:
+# TODO
 Add Jakeylol123 as a admin boss
