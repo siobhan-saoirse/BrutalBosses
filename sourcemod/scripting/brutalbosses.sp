@@ -1665,7 +1665,7 @@ public Event_Death(Handle:event, const String:name[], bool:dontBroadcast)
 			TF2_RegeneratePlayer(client);
 			g_bIsBrutalKoloaxScout[client] = false;
 		}
-		if (IsValidClient(client) && g_bIsNobodu[client])
+		if (IsValidClient(client) && g_bIsNobody[client])
 		{	
 			RemoveModelScout(client)
 			TF2Attrib_RemoveAll(client);
@@ -2521,7 +2521,7 @@ DoScare(client)
 	TF2_StunPlayer(client, 1.3, 1.0, TF_STUNFLAG_SLOWDOWN|TF_STUNFLAG_NOSOUNDOREFFECT);
 	for (new i = 1; i <= MaxClients; i++)
 	{
-		if (!IsValidClient(i) || !IsPlayerAlive(i) || HorsemannTeam == GetClientTeam(i))
+		if (!IsValidClient(i) || !IsPlayerAlive(i) || Team == GetClientTeam(i))
 			continue;
 
 		GetClientAbsOrigin(i, pos);
@@ -2544,7 +2544,7 @@ public Action:BrutalBossSH(clients[64], &numClients, String:sample[PLATFORM_MAX_
 		sample = BOO;
 		if (boo > 1)
 		{
-			DoHorsemannScare(entity);
+			DoScare(entity);
 		}
 		return Plugin_Changed;
 	}
@@ -2640,7 +2640,7 @@ public Action BrutalScoutSH(clients[64], int &numClients, char sample[PLATFORM_M
 			sample = BOO;
 			if (boo > 1)
 			{
-				DoHorsemannScare(entity);
+				DoScare(entity);
 			}
 			return Plugin_Changed;
 		}
@@ -2685,7 +2685,7 @@ public Action SeeSH(clients[64], int &numClients, char sample[PLATFORM_MAX_PATH]
 			sample = See;
 			if (boo > 1)
 			{
-				DoHorsemannScare(entity);
+				DoScare(entity);
 			}
 			return Plugin_Changed;
 		}
