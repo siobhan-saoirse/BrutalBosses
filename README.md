@@ -9,7 +9,3 @@ This is a plugin for Seamus's Server/Tick Tock Lock Gaming that is for Be the Bo
 
 # TODO
 Add Jakeylol123 as a admin boss
-
-# Outdated
-
-I'll be updating this soon, Note: This won't be released in Alliedmodders
