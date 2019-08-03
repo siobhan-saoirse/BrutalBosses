@@ -12,4 +12,4 @@ Add Jakeylol123 as a admin boss
 
 # Outdated
 
-I'll be updating this soon, Note: This won't be released in Alliedmodders
+I'll be updating this soon, Note: This might be released in Alliedmodders
